@@ -49,7 +49,7 @@ export const useTokensData = () => {
                             token_a_usdc_price as price
                         FROM solana_swaps_prices_raw
                     ) as t
-                    WHERE price > 0 AND address IN (${tokens.map((token) => `'${token.address}'`).join(',')})
+                    WHERE price > 0 AND address IN (${tokens.map((token) => `'${token.address}'`).join(',')}) AND timestamp > NOW() - INTERVAL 24 HOUR
                     ORDER BY timestamp
                     )
                     GROUP BY address
