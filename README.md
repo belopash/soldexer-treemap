@@ -1,7 +1,7 @@
 ![Soldexer Treemap](img/demo.png)
 
 
-# Soldexer Treemap
+# Soldexer Stock Market Treemap
 
 Interactive treemap visualization for Solana tokens price changes. Displays tokens as color-coded rectangles where size represents volume and colors show price movements (green = gains, red = losses).
 
@@ -30,7 +30,7 @@ Interactive treemap visualization for Solana tokens price changes. Displays toke
 
 3. **Open** `http://localhost:5173` in your browser
 
-## Optional: ClickHouse Configuration
+## ClickHouse Configuration
 
 Create a `.env` file for real data (otherwise uses mock data):
 
